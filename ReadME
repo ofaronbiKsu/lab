@@ -1,0 +1,42 @@
+*********************Group 5 Project Assignment****************
+***Please communicate effectively with another team members if you have an issue with the code or need more explanation.
+
+**************ONE**************
+Class ProcessFile:
+Create a read file method "read_file(self, file):".
+Using the read_file method, this class will read the content of the Inaugural Speech text file and return it as a string.
+You might want to print it out in the console to ensure your code works.
+
+Class StringAnalyzer:
+Create an extract next word method "extract_next_word(self, text):".
+Using extract_next_word, this class will extract the given string for the next word after the word 'the' from the returned string from ProcessFile.
+You might want to print it out in the console to ensure your code works.
+
+**************TWO**************
+Class FileWriter:
+Create:
+"def __init__(self):"
+    To create a list.
+
+"def add_to_list(self, word):"
+    To append the words to the list.
+
+"def write_to_file(self, file_path):"
+    To write to a new file.
+
+This class will add the extracted words from StringAnalyzer to a list and then write the list to a file.
+
+
+**************THREE**************
+Main Method:
+In the Main Method:
+1) Create instances of the classes.
+2) Use the instance of the ProcessFile() to call the read_file method and pass in the argument 'inaugural_speech.txt'.
+3) Use the StringAnalyzer() instance to call the extract_next_word method and pass in the step 2 variable.
+4) Use the FileWriter() instance to call
+    i) add_to_list and pass in the argument variable from step 3.
+    ii) write_to_file and pass in the new file name where the extracted words will be written.
+
+
+
+
