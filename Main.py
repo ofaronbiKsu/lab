@@ -1,11 +1,19 @@
 from File_writer import File_writer
-from Process_file import Process_file
-from File_analyzer import File_analyzer
+from Process_file import ProcessFile
 
+"""
+Program Name: Lab7.py (Group 5 project)
+Course: IT3883/Section W01
+Student Name: Vongai Kwenda, Crystal Misko, Opeyemi Faronbi.
+Assignment Number: Lab7
+Due Date: 12/05/2023
+"""
+
+
+# ************* Code by Crystal Misko **************
 if __name__ == "__main__":
     # classes instances.
-    process_file = Process_file()
-    string_analyzer = File_analyzer()
+    process_file = ProcessFile()
     file_writer = File_writer()
 
     # Read the content of the President Washington Inaugural Speech text file.
@@ -16,7 +24,7 @@ if __name__ == "__main__":
         print(f"Error: {e}")
 
     # Extract the next word after 'the'.
-    next_word = string_analyzer.extract_next_word(words)
+    next_word = process_file.extract_next_word(words)
 
     # Adds the extracted word to the extracted_words list.
     file_writer.add_to_list(next_word)

@@ -1,3 +1,5 @@
+# ************* Code by Opeyemi Faronbi **************
+
 class File_writer:
     def __init__(self):
         self.extracted_words = []
